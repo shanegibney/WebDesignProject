@@ -38,26 +38,26 @@ body, html {
   height: 100%;
 }
 .slide1 {
-  background: url(/images/hero1trees.jpg)no-repeat center;
+  background: url(images/hero1trees.jpg)no-repeat center;
       background-size: cover;
     animation:fade 40s infinite;
 -webkit-animation:fade 40s infinite;
 
 }
 .slide2 {
-  background: url(/images/hero2girlcircle.jpg)no-repeat center;
+  background: url(images/hero2girlcircle.jpg)no-repeat center;
       background-size: cover;
     animation:fade2 40s infinite;
 -webkit-animation:fade2 40s infinite;
 }
 .slide3 {
-    background: url(/images/hero3gate.jpg)no-repeat center;
+    background: url(images/hero3gate.jpg)no-repeat center;
       background-size: cover;
     animation:fade3 40s infinite;
 -webkit-animation:fade3 40s infinite;
 }
 .slide4 {
-    background: url(/images/hero4streetpeople.jpg)no-repeat center;
+    background: url(images/hero4streetpeople.jpg)no-repeat center;
       background-size: cover;
     animation:fade4 40s infinite;
 -webkit-animation:fade4 40s infinite;
