@@ -138,6 +138,10 @@ a:hover {
   color: white;
 }
 
+footer {
+  margin-top: auto;
+}
+
 i {
   padding-left: 20px;
   padding-right: 20px;
