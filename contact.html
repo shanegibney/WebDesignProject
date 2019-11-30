@@ -6,7 +6,7 @@
   <title>Brían Sparks Photos</title>
   <script src="https://kit.fontawesome.com/c022746aae.js" crossorigin="anonymous"></script>
   <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -45,8 +45,113 @@
   </header>
   <main>
     <div class="">
-      <p>I am the conatcst page</p>
-      <p>need a conatct form here!</p>
+      <html lang="en">
+      <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="ContactSantaForm.css" rel="stylesheet">
+      </head>
+      <head>
+      <body>
+      <h1>Contact Form
+      </h1>
+
+      <form
+              class="contact_form_font"
+              action="http://localhost:8000/comments"
+              method="POST"
+              class="card"
+              id="comment-form" 
+              enctype="application/x-www-form-urlencoded"
+         >
+
+        <fieldset>
+              <legend>Name and Contact Details</legend>
+      <table>
+        <tr>
+          <td><label for="form-input-name"> First Name: </label></td>
+          <td><input type="text" required = "required" maxlength = "30"
+            id = "form-input-name" placeholder = "John"></td>
+        </tr>
+        <tr>
+          <td>Last Name:</td>
+          <td><input type="text" required = "required" maxlength = "30"
+            id = "form-input-name" placeholder = "Smith"></td>
+        </tr>
+        <tr>
+          <td><label>Street:</label></td>
+          <td><input type="text"required = "required" maxlength = "30"
+            id = "form-input-name" placeholder = "1 Main Street"></td>
+        </tr>
+      <tr>
+        <td><label>City/Town:</label></td>
+        <td><input type="text" required = "required" maxlength = "30"
+      id = "form-input-name" placeholder = "Newtown"></td>
+      <tr>
+        <td><label for="form-input-name">County:</label></td>
+          <td><input type="text" required = "required" maxlength = "30"
+            id = "form-input-name" placeholder = "County or Region"></td>
+      </tr>
+      <tr>
+        <td><label>Postcode:</label></td>
+        <td><input type="text" required = "required" maxlength = "30"
+      id = "form-input-name" placeholder = "Eircode or Postcode"></td>
+      <tr>
+        <td><label>Country</td>
+        <td><select name = "Country-Name" required = "required">
+      <option name="Ireland">Ireland</option>
+      <option name="Great Britain">Great Britain</option>
+      <option name="United States">United States</option>
+      <option name="dietary-concern">Canada</option>
+      </select>
+      </label>
+
+      <tr>
+        <td> <label for="form-input-name"> Mobile:</label></td>
+        <td><input type="tel" required = "required" maxlength = "30"
+          id = "form-input-name" placeholder = "(XXX)XXXXXXXX"></td>
+      </tr>
+      <tr>
+        <td><label>Email:</label></td>
+        <td><input type="email" required = "required" maxlength = "30"
+          id = "form-input-name" placeholder = "john.smith@anymail.com"/></td>
+      <tr>
+      </table>
+      </fieldset>
+      </body>
+      <body>
+        <fieldset>
+      <legend>Your Photoprint Preferences</legend>
+      <label>Please indicate your presentation preferences below..</br>
+      <input type = "checkbox" name="Presentation" value="Dry mount"/>Dry mount <br/>
+      <input type = "checkbox" name="Presentation" value="Frame"/>Frame<br/>
+      <input type = "checkbox" name="Presentation" value="Plexiglass cover"/>Plexiglass cover <br/>
+      </label>Which paper type would you prefer for your print?</br>
+      <label class = "radio-label">
+      <input type = "radio" name = "finish" value "true" /> Gloss
+      </label>
+      <label class = "radio-label">
+      <input type = "radio" name = "finish" value "false" /> Silk
+      </label>
+      </fieldset>
+
+          <fieldset>
+            <legend>Feedback</legend>
+        <label>How did you hear about Brían Stack Photography?</label><br>
+        <input type = "checkbox" name="feedback" value="Word of mouth"/>Word of mouth <br/>
+        <input type = "checkbox" name="feedback" value="Google"/>Google<br/>
+        <input type = "checkbox" name="feedback" value="Facebook"/>Facebook <br/>
+        <input type = "checkbox" name="feedback" value="LinkedIn"/>LinkedIn<br/>
+        <input type = "checkbox" name="feedback" value="Instagram"/>Instagram<br/>
+        <input type = "checkbox" name="feedback" value="Other"/>Other<br/>
+
+        <label for="comments"><textarea input type="text" required = "required"
+          id = "form-input-name" placeholder = "If you have selected 'Other' please leave a comment here.."></textarea>
+      </fieldset>
+
+      <p><input type="submit" value="Submit Contact Form"></p>
+
+      </form>
     </div>
   </main>
   <footer>

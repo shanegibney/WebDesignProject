@@ -1,7 +1,6 @@
 body, html {
     height: 100%;
     margin: 0px;
-    font-family: "Arial", sans-serif;
 }
 
 /* use specific sized hero images for different screen sizes using media queries */
@@ -139,6 +138,10 @@ a:hover {
   color: white;
 }
 
+footer {
+  margin-top: auto;
+}
+
 i {
   padding-left: 20px;
   padding-right: 20px;
@@ -147,7 +150,6 @@ i {
 /* homepage styling */
 header{
   display: block;
-  font-family: "Times New Roman, Times, serif";
 }
 .title {
   text-align: center;
@@ -344,6 +346,56 @@ a.flex-item:hover{
    }
 }
 
+/* gallery style*/
+
+.container{
+max-width: 100%;
+margin: 0 auto;
+}
+
+
+.gallery{
+display: flex;
+flex-wrap: wrap;
+}
+
+.images{
+width: 300px;
+height: 250px;
+}
+.galleryItem{
+  width: 300px;
+  height:250px
+  margin: 10px;
+  text-decoration: none;
+}
+
+.galleryItem img{
+position: absolute;
+}
+
+.text-wrap {
+  position:relative;
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #c1d7d7;
+  opacity: 0;
+  margin: 2px;
+}
+
+.text-wrap:hover{
+  transition: all 0.8s ease;
+   background: rgba(0, 0, 0, 0.6);
+   opacity: 1;
+}
+.image-name{
+font-size: 30px;
+}
+
 a.menu_link {
 font-size: 15px;
 /* font-style: */
@@ -374,31 +426,4 @@ a.menu_link:hover{
 
 .article{
   padding: 20px;
-}
-
-textarea {
-max-width: auto;
-min-width: auto;
-}
-
-input:focus {background: lightgrey}
-textarea:focus {background: lightgrey}
-
-.contact_form_font {
-font-size: 13px;
-}
-
-/**input[type="submit"] {
-  font-size: 60px;
-}*/
-/** Below are some span options for changing the size of text*/
-span.xsm { font-size : x-small
-}
-span.sm { font-size : small
-}
-span.lg { font-size : large
-}
-span.xlg { font-size : x-large
-}
-span.xxlg { font-size : xx-large
 }
