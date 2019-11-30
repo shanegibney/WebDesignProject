@@ -1,0 +1,404 @@
+body, html {
+    height: 100%;
+    margin: 0px;
+    font-family: "Arial", sans-serif;
+}
+
+/* use specific sized hero images for different screen sizes using media queries */
+
+/* The hero image */
+ .hero-image {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/hero4statue.jpg"); */
+  height: 100%;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ }
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.slider {
+  max-width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  position: relative;
+}
+.slide1,.slide2,.slide3,.slide4,.slide5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide1 {
+  background: url(../images/hero1trees.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade 40s infinite;
+-webkit-animation:fade 40s infinite;
+
+}
+.slide2 {
+  background: url(../images/hero2girlcircle.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade2 40s infinite;
+-webkit-animation:fade2 40s infinite;
+}
+.slide3 {
+    background: url(../images/hero3gate.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade3 40s infinite;
+-webkit-animation:fade3 40s infinite;
+}
+.slide4 {
+    background: url(../images/hero4streetpeople.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade4 40s infinite;
+-webkit-animation:fade4 40s infinite;
+}
+@keyframes fade
+{
+  /* on 20% to 25%
+  turns off 20% to 25%
+  turns on 95% to 100% */
+  0% { opacity: 1}
+  20% { opacity: 1}
+  25% { opacity: 0}
+  95% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  /* turns on 20% to 25%
+  on 25% to 45%
+  truns off 45% to 50% */
+  0% { opacity: 0}
+  20% { opacity: 0}
+  25% { opacity: 1}
+  45% { opacity: 1}
+  50% { opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  /* turns on 45% to 50%
+  on 50% to 70%
+  turns off 70% to 75% */
+  0% { opacity: 0}
+  45% { opacity: 0}
+  50% { opacity: 1}
+  70% { opacity: 1}
+  75% { opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade4
+{
+  /* turns on 70% to 75%
+  on 75% to 95%
+  turns off 95% to 100% */
+  0% { opacity: 0}
+  70% { opacity: 0}
+  75% { opacity: 1}
+  95% { opacity: 1}
+  100% { opacity: 0}
+}
+
+.splash_title{
+  /* background-color: gray;
+  border: solid black 1px; */
+}
+
+a.homepage_link {
+font-size: 40px;
+/* font-style: */
+font-family: impact;
+color: white;
+text-decoration: none;
+}
+
+a:hover {
+  /* off black colour */
+  color: #232b2b;
+}
+
+.footersplashpage {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 10%;
+  /* border: solid black 1px; */
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+
+i {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* homepage styling */
+header{
+  display: block;
+  font-family: "Times New Roman, Times, serif";
+}
+.title {
+  text-align: center;
+}
+
+.menu{
+  width: 100%;
+  height: 40px;
+  display: block;
+  /* border: solid black 1px; */
+  background-color: #dddddd;
+}
+.menu_item{
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/* li a {
+  display: inline;
+  width: 60px;
+} */
+
+li {
+  float: left;
+}
+
+a.menu_item {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  text-decoration: none;
+  background-color: #dddddd;
+
+}
+
+main{
+  display: block;
+}
+
+.footerhomepage{
+  background-color: #dddddd;
+  bottom: 0px;
+  width: 100%;
+  height: 60px;
+  /* border: solid black 1px; */
+  text-align: center;
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+a.icon_link {
+font-size: 40px;
+font-family: impact;
+color: black;
+justify-content: center;
+}
+
+a.icon_link:hover{
+  color: #232b2b;
+}
+
+.flex-container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  list-style: none;
+}
+
+.center {
+  justify-content: center;
+}
+
+.flex-item {
+  font-size: 30px;
+  font-family: impact;
+  color: black;
+  justify-content: center;
+}
+
+a.flex-item:hover{
+  color: #232b2b;
+}
+
+.homepage_img{
+  padding-left: auto;
+  height: 10%;
+  text-align: center;
+}
+
+.homepage{
+  display: flex;
+}
+
+.image{
+    display: block;
+    padding-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+/* homepage styleing */
+.Banner{
+  display: flex;
+  flex-basis: 100%;
+  align-self: center;
+  justify-content: center;
+  height: 10%;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.Navbar {
+  display: flex;
+  background-color: #dddddd;
+  padding: 10px;
+  font-family: impact;
+  color: black;
+  /* height: 20px; */
+  /* border: solid black 1px; */
+}
+
+.Navbar__Link {
+  padding-right: 8px;
+  justify-content: center;
+}
+
+.Navbar__Items {
+  display: flex;
+}
+
+/* .Navbar__Items--right {
+  margin-left:auto;
+} */
+
+.Navbar__Link-toggle {
+  display: none;
+}
+.Navbar__Link-brand{
+  /* color: #dddddd; */
+}
+
+@media only screen and (max-width: 768px) {
+
+/* .Navbar__Link-brand{
+  display: none;
+} */
+
+  .Navbar__Items, .Navbar {
+    flex-direction: column;
+  }
+
+.Navbar__Items {
+    /* color: red; */
+    display:none;
+    /* align-items: center;
+    justify-content: space-between; */
+  }
+
+/* .Navbar__Items--right {
+    margin-left:0;
+  } */
+
+.Navbar__ToggleShow {
+    display: flex;
+  }
+
+.Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+   }
+
+   .Banner{
+     display: flex;
+     flex-basis: 100%;
+     align-self: center;
+     justify-content: center;
+     height: 10%;
+     font-size: 30px;
+     padding: 20px;
+   }
+}
+
+a.menu_link {
+font-size: 15px;
+/* font-style: */
+font-family: sans-serif;
+color: black;
+text-decoration: none;
+}
+a.menu_link:hover{
+  color: #232b2b;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgwrap {
+   width: 90%;
+   margin: auto;
+}
+.imgwrap img {
+   display: block;
+   width: 60%;
+   /* max-width: 500px; /*actual image width*/ */
+   height: auto; /* maintain aspect ratio*/
+   margin: auto; /*optional centering of image*/
+}
+
+.article{
+  padding: 20px;
+}
+
+textarea {
+max-width: auto;
+min-width: auto;
+}
+
+input:focus {background: lightgrey}
+textarea:focus {background: lightgrey}
+
+.contact_form_font {
+font-size: 13px;
+}
+
+/**input[type="submit"] {
+  font-size: 60px;
+}*/
+/** Below are some span options for changing the size of text*/
+span.xsm { font-size : x-small
+}
+span.sm { font-size : small
+}
+span.lg { font-size : large
+}
+span.xlg { font-size : x-large
+}
+span.xxlg { font-size : xx-large
+}
