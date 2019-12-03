@@ -2,7 +2,9 @@
 
 gh-pages [demo](https://shanegibney.github.io/WebDesignProject)
 
+<p align="center">
 <a href="https://shanegibney.github.io/WebDesignProject/"><img width="429" alt="Screenshot 2019-11-30 at 17 12 20" src="https://user-images.githubusercontent.com/17167992/69903684-ca662200-1394-11ea-8c8e-8640b7eb99e9.png"></a>
+</p>
 
 # WEB DESIGN
 ## HDCSDEV_INT, HDCYB_SEPOL, HDSDEV_SEPOL_YR1,HDSDEV_SEP, HDSWT_SEP
