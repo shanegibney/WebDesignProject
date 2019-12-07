@@ -1,7 +1,6 @@
 body, html {
     height: 100%;
     margin: 0px;
-    font-family: "Arial", sans-serif;
 }
 
 /* use specific sized hero images for different screen sizes using media queries */
@@ -139,6 +138,10 @@ a:hover {
   color: white;
 }
 
+footer {
+  margin-top: auto;
+}
+
 i {
   padding-left: 20px;
   padding-right: 20px;
@@ -147,7 +150,6 @@ i {
 /* homepage styling */
 header{
   display: block;
-  font-family: "Times New Roman, Times, serif";
 }
 .title {
   text-align: center;
@@ -351,6 +353,7 @@ max-width: 100%;
 margin: 0 auto;
 }
 
+
 .gallery{
 display: flex;
 flex-wrap: wrap;
@@ -358,14 +361,12 @@ flex-wrap: wrap;
 
 .images{
 width: 300px;
-height: 240px;
+height: 250px;
 }
-
 .galleryItem{
   width: 300px;
-  height:240px;
-  margin: 2px;
-  padding: 2px;
+  height:250px
+  margin: 10px;
   text-decoration: none;
 }
 
@@ -376,13 +377,14 @@ position: absolute;
 .text-wrap {
   position:relative;
   width: 300px;
-  height: 240px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   color: #c1d7d7;
   opacity: 0;
+  margin: 2px;
 }
 
 .text-wrap:hover{
@@ -391,62 +393,8 @@ position: absolute;
    opacity: 1;
 }
 .image-name{
-font-size: 25px;
+font-size: 30px;
 }
-
-
-/* prints page styles start*/
-
-.galleryPrints{
-display:grid;
-justify-content: center;
-background-color: black;
-}
-
-.PrintsItem{
-  margin: 0 auto;
-  position: relative;
-font-family:impact;
-max-width: 100%;
-color: white;
-}
-
-.prices {
-margin-right: auto;
-}
-
-.imagePrint{
-  width: 700px;
-  height:540px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 2px;
-  border-color: white;
-  padding: 2px;
-  }
-
-  .printText {
-    font-family: inherit;
-    text-align: center;
-    right: 0px;
-    width: 300px;
-    padding: 10px;
-  }
-
-  .Printname{
- font-size: 20px;
-  }
-
-  .prices{
-    font-size: 15px;
-  }
-
-  .purchase-link{
-    font-family: inherit;
-    font-size: 10px;
-  }
-
-/*prints page styles end*/
 
 a.menu_link {
 font-size: 15px;
@@ -478,31 +426,4 @@ a.menu_link:hover{
 
 .article{
   padding: 20px;
-}
-
-textarea {
-max-width: auto;
-min-width: auto;
-}
-
-input:focus {background: lightgrey}
-textarea:focus {background: lightgrey}
-
-.contact_form_font {
-font-size: 13px;
-}
-
-/**input[type="submit"] {
-  font-size: 60px;
-}*/
-/** Below are some span options for changing the size of text*/
-span.xsm { font-size : x-small
-}
-span.sm { font-size : small
-}
-span.lg { font-size : large
-}
-span.xlg { font-size : x-large
-}
-span.xxlg { font-size : xx-large
 }
