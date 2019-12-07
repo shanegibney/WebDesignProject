@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <title>Create mobile payment page design</title>
+  <!-- <link rel="stylesheet" href="style1.css">-->
+  <link rel="stylesheet" href="paymentstyle1.css">
+
+</head>
+
+<body>
+  <form action="destination.html" method="GET">
+    <div class="app-container">
+      <div class="top-box">
+        <p><span class="left-icon">&#x2190;</span>Payment<span class="right-icon">&#xb7;&#xb7;&#xb7;</span></p>
+      </div>
+
+      <div class="middle-box">
+        <h1>0000<span>€</span></h1>
+        <p>filler</p>
+      </div>
+
+      <div class="bottom-box">
+        <button type="button" class="payment-option-btn">Pay with PayPal</button>
+
+        <div class="card-details">
+          <p>Pay using credit or debit card</p>
+          <div class="card-num-field-group">
+            <label>Card Number</label><br>
+            <input type="text" class="card-num-field" placeholder="xxxx-xxxx-xxxx-xxxx">
+          </div>
+
+          <div class="date-field-group">
+            <label>Expiry Date</label><br>
+            <input type="text" class="date-field" placeholder="mm">
+            <input type="text" class="date-field" placeholder="yyyy">
+          </div>
+          <div class="cvc-field-group">
+            <label>CVC</label><br>
+            <input type="password" class="cvc-field" placeholder="xxx">
+          </div>
+          <div class="name-field-group">
+            <label>Card Holder Name</label><br>
+            <input type="password" class="card-num-field" placeholder="Full Name">
+          </div>
+          <div class="name-field-group">
+            <label>Billing Address</label><br>
+            <input type="password" class="card-num-field" placeholder="Full Name">
+          </div>
+          <div class="name-field-group">
+            <label>Delivery address</label><br>
+            <input type="password" class="card-num-field" placeholder="Full Name">
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Delivery address same as billing
+          </label>
+          <button type="button" class="pay-btn">Submit Payment</button>
+
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
