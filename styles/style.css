@@ -392,6 +392,59 @@ position: absolute;
 font-size: 25px;
 }
 
+/* prints page styles start*/
+
+.galleryPrints{
+display:grid;
+justify-content: center;
+background-color: black;
+}
+
+.PrintsItem{
+  margin: 0 auto;
+  position: relative;
+font-family:impact;
+max-width: 100%;
+color: white;
+}
+
+.prices {
+margin-right: auto;
+}
+
+.imagePrint{
+  width: 700px;
+  height:540px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px;
+  border-color: white;
+  padding: 2px;
+  }
+
+  .printText {
+    font-family: inherit;
+    text-align: center;
+    right: 0px;
+    width: 300px;
+    padding: 10px;
+  }
+
+  .Printname{
+ font-size: 20px;
+  }
+
+  .prices{
+    font-size: 15px;
+  }
+
+  .purchase-link{
+    font-family: inherit;
+    font-size: 10px;
+  }
+
+/*prints page styles end*/
+
 a.menu_link {
 font-size: 15px;
 /* font-style: */
