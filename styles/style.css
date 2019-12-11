@@ -395,17 +395,19 @@ font-size: 25px;
 /* prints page styles start*/
 
 .galleryPrints{
-display:grid;
+display:flex;
+flex-direction: column;
 justify-content: center;
-background-color: black;
+background-color: white;
+padding-top: 20px;
 }
 
 .PrintsItem{
-  margin: 0 auto;
-  position: relative;
-font-family:impact;
+margin: 0 auto;
+position: relative;
+font-family:sans-serif;
 max-width: 100%;
-color: white;
+color: ;
 }
 
 .prices {
@@ -413,25 +415,26 @@ margin-right: auto;
 }
 
 .imagePrint{
-  width: 700px;
-  height:540px;
+  max-width: 100%;
+  max-height: inherit;
   margin-left: auto;
   margin-right: auto;
+  object-fit: contain;
   border: 2px;
   border-color: white;
   padding: 2px;
   }
 
   .printText {
-    font-family: inherit;
+    font-family:sans-serif;
+    color: #e85a4f;
     text-align: center;
     right: 0px;
-    width: 300px;
     padding: 10px;
   }
 
   .Printname{
- font-size: 20px;
+ font-size: 30px;
   }
 
   .prices{
@@ -439,8 +442,18 @@ margin-right: auto;
   }
 
   .purchase-link{
-    font-family: inherit;
-    font-size: 10px;
+    font-family:sans-serif;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #E98074;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .purchase-link :hover{
+    transition: 0.4s ease;
   }
 
 /*prints page styles end*/
