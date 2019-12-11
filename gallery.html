@@ -16,7 +16,7 @@
     </div>
     <div class="Navbar">
       <div class="Navbar__Link Navbar__Link-brand">
-        Logo
+        <img height="20" src="images/spark.png" alt="spark logo">
       </div>
       <div class="Navbar__Link Navbar__Link-toggle">
         <i class="fas fa-bars"></i>
@@ -129,7 +129,7 @@
       <img class="images" src="images/ImageA.jpg"
       alt="gate">
       <figcaption class="text-wrap">
-      <span class = "imageName">Crossing</span></figcaption>
+      <span class="imageName">Crossing</span></figcaption>
       </a>
     </figure>
 
@@ -144,10 +144,10 @@
 
     <figure class="galleryItem">
       <a href="images/ImageC.jpg">
-      <img class="images" src="images/ImageC.jpg"
-      alt="gate">
-      <figcaption class="text-wrap">
-      <span class = "imageName">Through the window</span></figcaption>
+        <img class="images" src="images/ImageC.jpg"
+        alt="gate">
+        <figcaption class="text-wrap">
+        <span class="imageName">Through the window</span></figcaption>
       </a>
     </figure>
 
@@ -186,8 +186,8 @@
         var anchor = figure.querySelector("a");
         anchor.addEventListener("click", function(event) {
           event.preventDefault();
-          var ImageNameText Text = figure.querySelector("galleryItem").innerText;
-          openModal(anchor.href, ImageNameText);
+          var imageNameText = (figure.querySelector(".text-wrap") || {}).innerText;
+          openModal(anchor.href, imageNameText);
         });
       });
 
