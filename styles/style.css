@@ -273,6 +273,8 @@ a.flex-item:hover{
 
 .Navbar {
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #dddddd;
   padding: 10px;
   font-family: impact;
@@ -562,6 +564,10 @@ a.menu_link:hover{
   color: #232b2b;
 }
 
+.mainTitle{
+font-family: impact;
+}
+
 .box {
   display: flex;
   align-items: center;
@@ -580,7 +586,8 @@ a.menu_link:hover{
 }
 
 .article{
-  padding: 20px;
+  padding-right: 23%;
+  padding-left: 23%;
 }
 
 textarea {
