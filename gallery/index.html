@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gallery</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body,
+      div {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        width: 100%;
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      main {
+        width: 100%;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 10px;
+      }
+
+      header,
+      main {
+        background: #ccc;
+      }
+
+      .photo-grid {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .photo {
+        overflow: hidden;
+        max-height: 139px;
+        flex-basis: 33.33%;
+        margin: 0;
+        padding: 5px;
+        position: relative;
+      }
+      .photo img.sm {
+        width: 100%;
+      }
+      .photo figcaption {
+        position: absolute;
+        height: 50px;
+        background: #ffffffcf;
+        bottom: -50px;
+        width: 100%;
+        text-align: center;
+        transition: transform cubic-bezier(0, 0.79, 0, 0.99) 0.25s;
+      }
+      .photo:hover figcaption {
+        transform: translateY(-50px);
+      }
+
+      /* The Modal (background) */
+      .modal {
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+      }
+      .modal-mask {
+        /* position: absolute; */
+        /* left: 0; */
+        /* top: 0; */
+        /* right: 0; */ /* Full width */
+        /* bottom: 0; */
+        /* pointer-events: all; */
+      }
+
+      /* Modal Content (Image) */
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+
+      /* Caption of Modal Image (Image Text) - Same Width as the Image */
+      #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+      }
+
+      /* Add Animation - Zoom in the Modal */
+      .modal-content,
+      #caption {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+        /* pointer-events: none; */
+      }
+
+      @keyframes zoom {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+
+      /* The Close Button */
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      /* 100% Image Width on Smaller Screens */
+      @media only screen and (max-width: 700px) {
+        .modal-content {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Adam's gallery</h1>
+    </header>
+    <main>
+      <div class="photo-grid">
+        <figure class="photo">
+          <a href="img/bat_signal_-_publicity_-_h_2019.jpg">
+            <img
+              src="img/bat_signal_-_publicity_-_h_2019.jpg"
+              alt="bat signal"
+              class="sm"
+            />
+            <figcaption>The Bat signal</figcaption>
+          </a>
+        </figure>
+        <figure class="photo">
+          <a href="img/batman-encyclopedia-hero-v1r.jpg">
+            <img
+              src="img/batman-encyclopedia-hero-v1r.jpg"
+              alt="batman hero pose"
+              class="sm"
+            />
+            <figcaption>The batman hero pose</figcaption>
+          </a>
+        </figure>
+        <figure class="photo">
+          <a href="img/BatmanExperience.jpg">
+            <img
+              src="img/BatmanExperience.jpg"
+              alt="Batman experience"
+              class="sm"
+            />
+            <figcaption>The Bat experience</figcaption>
+          </a>
+        </figure>
+        <figure class="photo">
+          <a href="img/BatMask.jpg">
+            <img src="img/BatMask.jpg" alt="bat mask" class="sm" />
+            <figcaption>The Bat mask</figcaption>
+          </a>
+        </figure>
+        <figure class="photo">
+          <a href="img/cityofbane1.jpg">
+            <img src="img/cityofbane1.jpg" alt="city of bane" class="sm" />
+            <figcaption>The City of Bane</figcaption></a
+          >
+        </figure>
+        <figure class="photo">
+          <a
+            href="img/ComicsGallery_DC_20190605__TBMWL_06_300-001_HD_5d083364f15244.73340287.jpg"
+          >
+            <img
+              src="img/ComicsGallery_DC_20190605__TBMWL_06_300-001_HD_5d083364f15244.73340287.jpg"
+              alt="???"
+              class="sm"
+            />
+            <figcaption>???</figcaption></a
+          >
+        </figure>
+        <figure class="photo">
+          <a href="img/hush.jpg">
+            <img src="img/hush.jpg" alt="Hush" class="sm" />
+            <figcaption>Hush</figcaption></a
+          >
+        </figure>
+        <figure class="photo">
+          <a href="img/IMG_0435.0.jpg">
+            <img src="img/IMG_0435.0.jpg" alt="????" class="sm" />
+            <figcaption>????</figcaption></a
+          >
+        </figure>
+        <figure class="photo">
+          <a href="img/maxresdefault-1.jpg">
+            <img src="img/maxresdefault-1.jpg" alt="???" class="sm" />
+            <figcaption>???</figcaption></a
+          >
+        </figure>
+        <figure class="photo">
+          <a href="img/maxresdefault.jpg">
+            <img src="img/maxresdefault.jpg" alt="????" class="sm" />
+            <figcaption>????</figcaption></a
+          >
+        </figure>
+        <figure class="photo">
+          <a href="img/neal-adams-hero.jpeg">
+            <img src="img/neal-adams-hero.jpeg" alt="????" class="sm" />
+            <figcaption>????</figcaption></a
+          >
+        </figure>
+      </div>
+    </main>
+    <script type="template" id="modal-template">
+      <div class="modal-mask"></div>
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </script>
+    <script>
+      (function() {
+        var allImages = document.querySelectorAll(".photo-grid .photo");
+        // loop each image
+        allImages.forEach(function(figure) {
+          var anchor = figure.querySelector("a");
+          anchor.addEventListener("click", function(event) {
+            event.preventDefault();
+            var captionText = figure.querySelector("figcaption").innerText;
+            openModal(anchor.href, captionText);
+          });
+        });
+
+        // Open Modal takes the template and adds it to the document.body
+        // close modal will remove itself after wards
+        function openModal(href, captionText) {
+          function closeModal(modal) {
+            return function(event) {
+              event.stopPropagation();
+              modal.remove();
+            };
+          }
+          // get template html
+          var template = document.getElementById("modal-template");
+          // create a container
+          var modal = document.createElement("div");
+          modal.className = "modal";
+          modal.innerHTML = template.innerHTML;
+          // add event listeners and content
+          var content = modal.querySelector(".modal-content");
+          modal
+            .querySelector(".close")
+            .addEventListener("click", closeModal(modal), true);
+          modal.addEventListener("click", closeModal(modal));
+          modal.querySelector("#caption").innerText = captionText;
+          content.setAttribute("src", href);
+          // prevent image clicks propagating to parent
+          content.addEventListener("click", e => e.stopPropagation(), true);
+          // add to body
+          document.body.appendChild(modal);
+        }
+      })();
+    </script>
+  </body>
+</html>
