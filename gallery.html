@@ -51,7 +51,7 @@
           <img class="images" src="images/PortraitC.jpg"
           alt="Smiles">
           <figcaption class="text-wrap">
-          <p class = "imageName">Smiles</p></figcaption>
+          <p class="imageName">Smiles</p></figcaption>
           </a>
         </figure>
 
@@ -60,7 +60,7 @@
         <img class="images" src="images/GalleryPerson.jpg"
         alt="gate">
         <figcaption class="text-wrap">
-        <span class = "imageName">Looking into the night</span></figcaption>
+        <span class="imageName">Looking into the night</span></figcaption>
         </a>
       </figure>
 
@@ -69,7 +69,7 @@
       <img class="images" src="images/Funpark.jpg"
       alt="gate">
       <figcaption class="text-wrap">
-      <span class = "imageName">Fun Park</span></figcaption>
+      <span class="imageName">Fun Park</span></figcaption>
       </a>
     </figure>
 
@@ -78,7 +78,7 @@
       <img class="images" src="images/reclaimed.jpg"
       alt="gate">
       <figcaption class="text-wrap">
-      <span class = "imageName">Reclaimed</span></figcaption>
+      <span class="imageName">Reclaimed</span></figcaption>
       </a>
     </figure>
 
@@ -87,7 +87,7 @@
       <img class="images" src="images/Portrait.jpg"
       alt="gate">
       <figcaption class="text-wrap">
-      <span class = "imageName">Portrait</span></figcaption>
+      <span class="imageName">Portrait</span></figcaption>
       </a>
     </figure>
 
@@ -96,7 +96,7 @@
       <img class="images" src="images/Person.jpg"
       alt="gate">
       <figcaption class="text-wrap">
-      <span class = "imageName">Mirror image</span></figcaption>
+      <span class="imageName">Mirror image</span></figcaption>
       </a>
     </figure>
 
@@ -105,7 +105,7 @@
       <img class="images" src="images/PortraitA.jpg"
       alt="gate">
       <figcaption class="text-wrap">
-      <span class = "imageName">Portrait</span></figcaption>
+      <span class="imageName">Portrait</span></figcaption>
       </a>
     </figure>
 
@@ -114,7 +114,7 @@
       <img class="images" src="images/PortraitB.jpg"
       alt="gate">
       <figcaption class="text-wrap">
-      <span class = "imageName">Captivating</span></figcaption>
+      <span class="imageName">Captivating</span></figcaption>
       </a>
     </figure>
 
@@ -123,7 +123,7 @@
       <img class="images" src="images/funparkA.jpg"
       alt="gate">
       <figcaption class="text-wrap">
-      <span class = "imageName">Roller Coaster</span></figcaption>
+      <span class="imageName">Roller Coaster</span></figcaption>
       </a>
     </figure>
 
@@ -132,7 +132,7 @@
       <img class="images" src="images/ImageA.jpg"
       alt="gate">
       <figcaption class="text-wrap">
-      <span class = "imageName">Crossing</span></figcaption>
+      <span class="imageName">Crossing</span></figcaption>
       </a>
     </figure>
 
@@ -141,7 +141,7 @@
       <img class="images" src="images/ImageB.jpg"
       alt="gate">
       <figcaption class="text-wrap">
-      <span class = "imageName">Bikes</span></figcaption>
+      <span class="imageName">Bikes</span></figcaption>
       </a>
     </figure>
 
@@ -150,7 +150,7 @@
       <img class="images" src="images/ImageC.jpg"
       alt="gate">
       <figcaption class="text-wrap">
-      <span class = "imageName">Through the window</span></figcaption>
+      <span class="imageName">Through the window</span></figcaption>
       </a>
     </figure>
 
@@ -189,7 +189,7 @@
         var anchor = figure.querySelector("a");
         anchor.addEventListener("click", function(event) {
           event.preventDefault();
-          var ImageNameText Text = figure.querySelector("galleryItem").innerText;
+          var ImageNameText = (figure.querySelector(".text-wrap") || {}).innerText;
           openModal(anchor.href, ImageNameText);
         });
       });
