@@ -142,6 +142,7 @@ a:hover {
 i {
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 20px;
 }
 
 /* homepage styling */
@@ -197,7 +198,7 @@ main{
   background-color: #dddddd;
   bottom: 0px;
   width: 100%;
-  height: 60px;
+  height: 80px;
   /* border: solid black 1px; */
   text-align: center;
   font-size: 50px;
@@ -208,9 +209,9 @@ main{
 }
 
 a.icon_link {
-font-size: 40px;
+font-size: 35px;
 font-family: impact;
-color: black;
+color: #BBBBBB;
 justify-content: center;
 }
 
@@ -351,6 +352,10 @@ a.flex-item:hover{
 .gallery{
 display: flex;
 flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+padding-top: 20px;
+padding-bottom: 20px;
 }
 
 .galleryItem{
@@ -485,24 +490,6 @@ max-width: 100%;
 color: ;
 }
 
-/* prints page styles start*/
-
-.galleryPrints{
-display:flex;
-flex-direction: column;
-justify-content: center;
-background-color: white;
-padding-top: 20px;
-}
-
-.PrintsItem{
-margin: 0 auto;
-position: relative;
-font-family:sans-serif;
-max-width: 100%;
-color: ;
-}
-
 .prices {
 margin-right: auto;
 }
@@ -548,7 +535,6 @@ margin-right: auto;
   .purchase-link :hover{
     transition: 0.4s ease;
   }
-
 
 
 /*prints page styles end*/
