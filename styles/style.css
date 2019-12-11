@@ -149,6 +149,7 @@ i {
 header{
   display: block;
   font-family: "Times New Roman, Times, serif";
+  background-color: #BBBBBB;
 }
 .title {
   text-align: center;
