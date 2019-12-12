@@ -216,6 +216,13 @@ color: #BBBBBB;
 justify-content: center;
 }
 
+a.icon_link_splashpage {
+font-size: 35px;
+font-family: impact;
+color: #202020;
+justify-content: center;
+}
+
 a.icon_link:hover{
   color: #232b2b;
 }
