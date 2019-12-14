@@ -1,21 +1,37 @@
 <!doctype html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>Brían Sparks Photos</title>
   <script src="https://kit.fontawesome.com/c022746aae.js" crossorigin="anonymous"></script>
   <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="paymentstyle1.css">
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="paymentstyle1.css">
+<style>
+page-container {
+  position: relative;
+  min-height: 100vh;
+}
 
+content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+footer {
+  position: absolute;
+  top: 900px;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
+</style>
 </head>
 
 <body>
 
   <header>
     <div class="Banner">
-      <div class="mainTitle">BRÍAN SPARKS PHOTOGRAPHY</div>
+      <div>BRÍAN SPARKS PHOTOGRAPHY</div>
     </div>
     <div class="Navbar">
       <div class="Navbar__Link Navbar__Link-brand">
@@ -43,69 +59,71 @@
       </nav>
     </div>
   </header>
-  <form class="app-container" action="paymentdestination.html" method="GET">
-    <div class="top-box">
-      <p>Payment</p>
-    </div>
 
-    <div class="middle-box">
-      <h1>0000<span>€</span></h1>
-      <h2>Cost</h2>
-    </div>
 
-    <div class="card-details">
-      <p>Pay using credit card or debit card</p>
-      <div class="card-num-field-group">
-        <label>Card Number</label><br>
-        <input type="text" class="card-num-field" required placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="16">
-      </div>
-    </div>
+<form class="app-container"  action="paymentdestination.html" method="GET">
 
-    <div class="date-field-group">
-      <label>Expiry Date</label><br>
-      <input type="text" class="date-field" required placeholder="mm" maxlength="2">
-      <input type="text" class="date-field" required placeholder="yyyy" maxlength="4">
-    </div>
+  <div class="top-box">
+  <p>Payment</p>
+  </div>
 
-    <div class="cvc-field-group">
-      <label>CVC</label><br>
-      <input type="password" class="cvc-field" required placeholder="xxx" maxlength="3">
-    </div>
+  <div class="middle-box">
+  <h1>50.00<span>€</span></h1>
+  <h2>Cost</h2>
+  </div>
 
-    <div class="name-field-group">
-      <label>Card Holder Name</label><br>
-      <input type="text" class="card-holder-name-field" required placeholder="Full Name">
-    </div>
+  <div class="card-details">
+  <p>Pay using credit card or debit card</p>
+  <div class="card-num-field-group">
+  <label>Card Number</label><br>
+  <input type="text" class="card-num-field" required placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="16">
+  </div>
+</div>
 
-    <div class="name-field-group">
-      <label>Billing Address</label><br>
-      <input type="text" class="card-num-field" required placeholder="Full Name">
-    </div>
+  <div class="date-field-group">
+  <label>Expiry Date</label><br>
+  <input type="text" class="date-field" required placeholder="mm" maxlength="2">
+  <input type="text" class="date-field" required placeholder="yyyy" maxlength="4">
+  </div>
 
-    <div class="name-field-group">
-      <label>Delivery address</label><br>
-      <input type="text" class="card-num-field" required placeholder="Full Name">
-    </div>
+  <div class="cvc-field-group">
+  <label>CVC</label><br>
+  <input type="password" class="cvc-field" required placeholder="xxx" maxlength="3">
+  </div>
 
-    <label>
-      <input type="checkbox" check="check" name="sameadr"> Delivery address same as billing
-    </label>
-    <input type="submit" class="pay-btn" value="Submit Payment">
+  <div class="name-field-group">
+  <label>Card Holder Name</label><br>
+  <input type="text" class="card-holder-name-field" required placeholder="Full Name">
+  </div>
 
-  </form>
+  <div class="name-field-group">
+  <label>Billing Address</label><br>
+  <input type="text" class="card-num-field" required placeholder="Full Name">
+  </div>
 
-  <footer>
-    <ul class="flex-container center footerhomepage">
-      <li class="flex-item"><a class="icon_link" href="mailto:shanegibney@gmail.com"><i class="far fa-envelope"></i></a></li>
-      <a class="icon_link" href="https://www.linkedin.com/in/brianjsparks" target="blank"><i class="fab fa-linkedin-in"></i></a>
-      <li class="flex-item"> <a class="icon_link" href="https://twitter.com/brianjsparks" target="blank"><i class="fab fa-twitter"></i></a></li>
-      <li class="flex-item"><a class="icon_link" href="https://www.instagram.com/brianjsparks/" target="blank"><i class="fab fa-instagram"></i></a></li>
-      <li class="flex-item"><a class="icon_link" href="https://open.spotify.com/user/brianjsparks" target="blank"><i class="fab fa-spotify"></i></a></li>
-      <!-- <i class="fab fa-linkedin"></i> -->
-      <!-- <i class="fab fa-twitter-square"></i> -->
-    </ul>
-  </footer>
-  <script src="/scripts/script.js" charset="utf-8"></script>
+  <div class="name-field-group">
+  <label>Delivery address</label><br>
+  <input type="text" class="card-num-field" required placeholder="Full Name">
+  </div>
+
+  <label>
+  <input type="checkbox" check="check" name="sameadr"> Delivery address same as billing
+  </label>
+  <input type="submit" class="pay-btn" value="Submit Payment">
+
+</form>
+
+<footer>
+  <ul class="flex-container center footerhomepage">
+    <li class="flex-item"><a class="icon_link" href="mailto:shanegibney@gmail.com"><i class="far fa-envelope"></i></a></li>
+    <a class="icon_link" href="https://www.linkedin.com/in/brianjsparks" target="blank"><i class="fab fa-linkedin-in"></i></a>
+    <li class="flex-item"> <a class="icon_link" href="https://twitter.com/brianjsparks" target="blank"><i class="fab fa-twitter"></i></a></li>
+    <li class="flex-item"><a class="icon_link" href="https://www.instagram.com/brianjsparks/" target="blank"><i class="fab fa-instagram"></i></a></li>
+    <li class="flex-item"><a class="icon_link" href="https://open.spotify.com/user/brianjsparks" target="blank"><i class="fab fa-spotify"></i></a></li>
+    <!-- <i class="fab fa-linkedin"></i> -->
+    <!-- <i class="fab fa-twitter-square"></i> -->
+  </ul>
+</footer>
+<script src="/scripts/script.js" charset="utf-8"></script>
 </body>
-
 </html>
