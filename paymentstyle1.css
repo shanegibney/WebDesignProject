@@ -4,9 +4,9 @@ body
 }
 .app-container
 {
-  height: 700px;
+  height: 900px;
   width: 350px;
-  background-image: linear-gradient(white,white);
+/*  background-image: linear-gradient(white,white);*/
   top: 50%;
   position: relative;
   padding: 10px;
