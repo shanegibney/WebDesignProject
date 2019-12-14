@@ -610,3 +610,25 @@ span.xlg { font-size : x-large
 }
 span.xxlg { font-size : xx-large
 }
+
+fieldset {
+  width: 50%;
+  margin: 20px;
+  padding: 0 10px 10px;
+  border: 1px solid #666;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #666;
+  padding-top: 10px;
+}
+legend {
+  padding: 2px 4px;
+  background: #fff;
+  /* For better legibility against the box-shadow */
+}
+fieldset > legend {
+  float: left;
+  margin-top: -20px;
+}
+fieldset > legend + * {
+  clear: both;
+}
