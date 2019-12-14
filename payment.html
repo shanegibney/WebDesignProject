@@ -46,8 +46,10 @@ width: 100%;
       </nav>
     </div>
   </header>
-<form action="paymentdestination.html" method="GET">
-<div class="app-container">
+
+
+<form class="app-container"  action="paymentdestination.html" method="GET">
+
   <div class="top-box">
   <p>Payment</p>
   </div>
@@ -63,36 +65,40 @@ width: 100%;
   <label>Card Number</label><br>
   <input type="text" class="card-num-field" required placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="16">
   </div>
+</div>
 
   <div class="date-field-group">
   <label>Expiry Date</label><br>
   <input type="text" class="date-field" required placeholder="mm" maxlength="2">
   <input type="text" class="date-field" required placeholder="yyyy" maxlength="4">
   </div>
+
   <div class="cvc-field-group">
   <label>CVC</label><br>
   <input type="password" class="cvc-field" required placeholder="xxx" maxlength="3">
   </div>
+
   <div class="name-field-group">
   <label>Card Holder Name</label><br>
   <input type="text" class="card-holder-name-field" required placeholder="Full Name">
   </div>
+
   <div class="name-field-group">
   <label>Billing Address</label><br>
   <input type="text" class="card-num-field" required placeholder="Full Name">
   </div>
+
   <div class="name-field-group">
   <label>Delivery address</label><br>
   <input type="text" class="card-num-field" required placeholder="Full Name">
   </div>
+
   <label>
   <input type="checkbox" check="check" name="sameadr"> Delivery address same as billing
   </label>
   <input type="submit" class="pay-btn" value="Submit Payment">
 
-  </div>
-  </div>
-</div>
+</form>
 
 <footer>
   <ul class="flex-container center footerhomepage">
