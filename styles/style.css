@@ -131,7 +131,7 @@ a:hover {
 .footersplashpage {
   position: absolute;
   bottom: 0px;
-  width: 100%;
+  /* width: 100%; */
   height: 10%;
   /* border: solid black 1px; */
   text-align: center;
@@ -198,7 +198,7 @@ main{
 .footerhomepage{
   background-color: #dddddd;
   bottom: 0px;
-  width: 100%;
+  /* width: 100%; */
   height: 80px;
   /* border: solid black 1px; */
   text-align: center;
