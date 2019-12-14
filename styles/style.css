@@ -283,7 +283,7 @@ a.flex-item:hover{
 .Navbar {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   background-color: #dddddd;
   padding: 10px;
   font-family: impact;
